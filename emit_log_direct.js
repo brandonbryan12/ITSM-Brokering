@@ -11,7 +11,7 @@ amqp.connect('amqp://localhost', function(err, conn) {
 
     ch.assertExchange(ex, 'direct', { durable: false });
     ch.publish(ex, service, new Buffer(msg));
-    console.log(" [x] Sent %s: '%s'", service, msg);
+    console.log(' [x] Sent %s', service);
   });
 
   setTimeout(function() {
@@ -21,6 +21,8 @@ amqp.connect('amqp://localhost', function(err, conn) {
 });
 
 function getServiceFromAccount(account) {
+  let service = '';
+
   // Delete this and replace with http request
   switch (account) {
     case 'walmart':
@@ -30,4 +32,8 @@ function getServiceFromAccount(account) {
       service = 'sf';
       break;
   }
+
+  // service = GET w/ params (account)
+
+  return service;
 }
