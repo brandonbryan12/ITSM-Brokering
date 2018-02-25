@@ -4,7 +4,6 @@ const xmlhttp = require('xmlhttprequest');
 module.exports = class Consumer {
   constructor(name) {
     this.consumerName = name;
-    this.consumer = this;
   }
 
   connect() {
@@ -21,17 +20,21 @@ module.exports = class Consumer {
           );
           ch.bindQueue(q.queue, ex, '');
 
+          var self = this;
+
           ch.consume(
             q.queue,
             function(msg) {
-              let account = msg;
+              //console.log(this.consumerName);
+              let payload = JSON.parse(msg.content.toString());
+              console.log(JSON.stringify(payload));
               httpGetAsync(
-                'http://127.0.0.1:8080/Lookup?providerName=' +
-                  account.content.toString(),
+                'http://127.0.0.1:8080/Lookup?providerName=' + payload.acct,
                 onHTTPResponseFromLookup,
                 ch,
                 ex,
-                msg
+                payload,
+                'sn'
               );
             },
             { noAck: true }
@@ -42,17 +45,66 @@ module.exports = class Consumer {
   }
 };
 
-function onHTTPResponseFromLookup(responseText, ch, ex, msg) {
+function onHTTPResponseFromLookup(responseText, ch, ex, payload, consumerName) {
   console.log(' [x] %s', responseText);
+  console.log(consumerName);
+  if (consumerName == responseText) {
+    // translate
+    translate(payload);
+    // call
+  }
 }
 
-function httpGetAsync(urlString, callback, ch, ex, msg) {
+function httpGetAsync(urlString, callback, ch, ex, msg, consumerName) {
   var XMLHttpRequest = xmlhttp.XMLHttpRequest;
   var xmlHttp = new XMLHttpRequest();
   xmlHttp.onreadystatechange = function() {
     if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-      callback(xmlHttp.responseText, ch, ex, msg);
+      callback(xmlHttp.responseText, ch, ex, msg, consumerName);
   };
   xmlHttp.open('GET', urlString, true);
   xmlHttp.send(null);
+}
+
+function translate(payload) {
+  if (payload.method == 'create') {
+    console.log('in');
+    // if !callerid || !short_desc
+    // return
+    /*const attributes = ['company', 'locaiton', 'category', 'subcategory'];
+
+    let requestBody = {
+      caller_id: '',
+      short_description: ''
+    };
+
+    for (let i = 0; i < attributes.length; i++) {
+      if (attributes[i] in msg) {
+        requestBody[attributes[i]] = msg[attributes[i]];
+      }
+    }
+
+    var XMLHttpRequest = xmlhttp.XMLHttpRequest;
+    var client = new XMLHttpRequest();
+    client.open(
+      'post',
+      'https://dev30188.service-now.com/api/now/table/incident?sysparm_limit=1'
+    );
+
+    client.setRequestHeader('Accept', 'application/json');
+    client.setRequestHeader('Content-Type', 'application/json');
+
+    //Eg. UserName="admin", Password="admin" for this code sample.
+    client.setRequestHeader(
+      'Authorization',
+      'Basic ' + btoa('admin' + ':' + 'admin')
+    );
+
+    client.onreadystatechange = function() {
+      if ((this.readyState = this.DONE)) {
+        console.log(this.status + this.response);
+      }
+    };
+    client.send(JSON.stringify(requestBody));*/
+  }
 }
