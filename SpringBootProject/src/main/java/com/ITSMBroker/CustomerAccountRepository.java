@@ -6,6 +6,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface CustomerAccountRepository extends MongoRepository<CustomerAccount, ObjectId> {
     CustomerAccount findById(ObjectId id);
-    CustomerAccount findByUsernameAndPassword(String username, String password);
+    CustomerAccount findByUsername(String username);
     List<CustomerAccount> findByOrganization(Organization org);
 }

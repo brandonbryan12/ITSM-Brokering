@@ -1,6 +1,5 @@
 package com.ITSMBroker;
 
-import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -9,10 +8,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class LookupLauncher implements CommandLineRunner {
     @Autowired
-    private CustomerAccountRepository repository;
-    
+    private CustomerAccountRepository custRepo;
+    @Autowired
+    private OrganizationRepository orgRepo;
+    @Autowired
+    private ServiceRepository serviceRepo;
     public static void main(String[] args) { SpringApplication.run(LookupLauncher.class, args); }
-
     @Override
     public void run(String... strings) throws Exception {
 		/*repository.deleteAll();
@@ -27,5 +28,10 @@ public class LookupLauncher implements CommandLineRunner {
 		System.out.println("--------------------------------");
 		System.out.println(repository.findByCustomerName("Walmart"));
 		System.out.println(repository.findByCustomerName("Target"));*/
+                /*Organization o = new Organization("Walmart");
+                orgRepo.save(o);
+                Service s = new Service("ServiceNow");
+                serviceRepo.save(s);
+                custRepo.save(new CustomerAccount(o, s, "admin", "passw", "stestu", "stestp", PermissionsLevel.ADMIN));*/
     }
 }

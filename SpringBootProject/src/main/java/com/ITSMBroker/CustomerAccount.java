@@ -1,6 +1,7 @@
 package com.ITSMBroker;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -12,7 +13,9 @@ public class CustomerAccount {
     private Organization org;
     @DBRef
     private Service service;
-    private String username, password, serviceUsername, servicePassword;
+    @Indexed(unique=true)
+    private String username;
+    private String password, serviceUsername, servicePassword;
     private PermissionsLevel permissionsLevel;
     public CustomerAccount(){
         password = "";

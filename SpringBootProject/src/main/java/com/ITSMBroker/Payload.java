@@ -1,6 +1,6 @@
 package com.ITSMBroker;
 
-public class PayloadPOJO {
+public class Payload {
 
     public enum ActionType{
         NONE,
@@ -12,8 +12,8 @@ public class PayloadPOJO {
     private String providerName, serviceName;
     private ActionType actionType;
 
-    public PayloadPOJO(){}
-    public PayloadPOJO(String providerName, ActionType actionType){
+    public Payload(){}
+    public Payload(String providerName, ActionType actionType){
         this.providerName = providerName;
         this.actionType = actionType;
         this.serviceName = TranslateProviderToServiceName(providerName);
