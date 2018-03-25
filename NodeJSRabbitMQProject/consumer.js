@@ -7,8 +7,11 @@ module.exports = class Consumer {
   }
 
   connect() {
+    let consumerName = this.consumerName;
     amqp.connect('amqp://localhost', function(err, conn) {
       conn.createChannel(function(err, ch) {
+        ch.consumerName = consumerName;
+
         var ex = 'ITSM';
 
         ch.assertExchange(ex, 'fanout', { durable: false });
@@ -25,19 +28,17 @@ module.exports = class Consumer {
           ch.consume(
             q.queue,
             function(msg) {
-              //console.log(this.consumerName);
               let payload = JSON.parse(msg.content.toString());
-              console.log(JSON.stringify(payload));
+
               httpGetAsync(
                 'http://127.0.0.1:8080/Lookup?providerName=' + payload.acct,
                 onHTTPResponseFromLookup,
                 ch,
                 ex,
-                payload,
-                'sn'
+                payload
               );
             },
-            { noAck: true }
+            { noAck: true, arguments: self }
           );
         });
       });
@@ -45,13 +46,17 @@ module.exports = class Consumer {
   }
 };
 
-function onHTTPResponseFromLookup(responseText, ch, ex, payload, consumerName) {
-  console.log(' [x] %s', responseText);
-  console.log(consumerName);
-  if (consumerName == responseText) {
+function onHTTPResponseFromLookup(responseText, ch, ex, payload) {
+  if (ch.consumerName == responseText) {
     // translate
     translate(payload);
     // call
+  } else {
+    console.log(
+      'Ignoring. User is service %s while consumer is service %s',
+      responseText,
+      ch.consumerName
+    );
   }
 }
 
@@ -67,10 +72,18 @@ function httpGetAsync(urlString, callback, ch, ex, msg, consumerName) {
 }
 
 function translate(payload) {
+  console.log('translating');
+  let data = payload.data;
   if (payload.method == 'create') {
-    console.log('in');
-    // if !callerid || !short_desc
-    // return
+    console.log(payload);
+    if (
+      !data.hasOwnProperty('caller_id') ||
+      !data.hasOwnProperty('short_description')
+    ) {
+      console.log('Caller ID or Short Description not provided. Exiting call');
+      return;
+    }
+
     /*const attributes = ['company', 'locaiton', 'category', 'subcategory'];
 
     let requestBody = {

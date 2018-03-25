@@ -13,7 +13,6 @@ public class LookupController {
     }
     @RequestMapping(method=GET, value="/Lookup")
     public String Lookup(@RequestParam(value="providerName", defaultValue="None") String providerName){
-        System.out.println(providerName);
         return new Payload(providerName, Payload.ActionType.NONE).getServiceName();
     }
 }
