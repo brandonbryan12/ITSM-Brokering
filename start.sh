@@ -12,3 +12,5 @@ wait
 
 # Producer
 node producer.js &
+
+# Get pid of spring process: lsof -i:8080 -t

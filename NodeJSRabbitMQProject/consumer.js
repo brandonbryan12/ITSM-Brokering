@@ -44,13 +44,62 @@ module.exports = class Consumer {
       });
     });
   }
+
+  translate(payload) {
+    console.log('Translating incoming payload');
+    let data = payload.data;
+    if (payload.method == 'create') {
+      if (
+        !data.hasOwnProperty('caller_id') ||
+        !data.hasOwnProperty('short_description')
+      ) {
+        console.log(
+          'Caller ID or Short Description not provided. Exiting call'
+        );
+        return;
+      }
+
+      const attributes = [
+        'company',
+        'location',
+        'category',
+        'subcategory',
+        'business_service',
+        'cmdb_ci',
+        'contact_type',
+        'state',
+        'impact',
+        'urgency',
+        'priority',
+        'assignment_group',
+        'assigned_to'
+      ];
+
+      let requestData = {
+        method: payload.method,
+        body: {
+          aller_id: data.caller_id,
+          short_description: data.short_description
+        }
+      };
+
+      for (let i = 0; i < attributes.length; i++) {
+        if (attributes[i] in data) {
+          requestData.body[attributes[i]] = data[attributes[i]];
+        }
+      }
+
+      return requestData;
+    }
+  }
 };
 
 function onHTTPResponseFromLookup(responseText, ch, ex, payload) {
   if (ch.consumerName == responseText) {
     // translate
-    translate(payload);
+    let requestData = translate(payload);
     // call
+    callService(requestData);
   } else {
     console.log(
       'Ignoring. User is service %s while consumer is service %s',
@@ -71,11 +120,14 @@ function httpGetAsync(urlString, callback, ch, ex, msg, consumerName) {
   xmlHttp.send(null);
 }
 
+function callService(requestData) {
+  console.log(requestData);
+}
+
 function translate(payload) {
-  console.log('translating');
+  console.log('Translating incoming payload');
   let data = payload.data;
   if (payload.method == 'create') {
-    console.log(payload);
     if (
       !data.hasOwnProperty('caller_id') ||
       !data.hasOwnProperty('short_description')
@@ -84,40 +136,36 @@ function translate(payload) {
       return;
     }
 
-    /*const attributes = ['company', 'locaiton', 'category', 'subcategory'];
+    const attributes = [
+      'company',
+      'location',
+      'category',
+      'subcategory',
+      'business_service',
+      'cmdb_ci',
+      'contact_type',
+      'state',
+      'impact',
+      'urgency',
+      'priority',
+      'assignment_group',
+      'assigned_to'
+    ];
 
-    let requestBody = {
-      caller_id: '',
-      short_description: ''
+    let requestData = {
+      method: payload.method,
+      body: {
+        aller_id: data.caller_id,
+        short_description: data.short_description
+      }
     };
 
     for (let i = 0; i < attributes.length; i++) {
-      if (attributes[i] in msg) {
-        requestBody[attributes[i]] = msg[attributes[i]];
+      if (attributes[i] in data) {
+        requestData.body[attributes[i]] = data[attributes[i]];
       }
     }
 
-    var XMLHttpRequest = xmlhttp.XMLHttpRequest;
-    var client = new XMLHttpRequest();
-    client.open(
-      'post',
-      'https://dev30188.service-now.com/api/now/table/incident?sysparm_limit=1'
-    );
-
-    client.setRequestHeader('Accept', 'application/json');
-    client.setRequestHeader('Content-Type', 'application/json');
-
-    //Eg. UserName="admin", Password="admin" for this code sample.
-    client.setRequestHeader(
-      'Authorization',
-      'Basic ' + btoa('admin' + ':' + 'admin')
-    );
-
-    client.onreadystatechange = function() {
-      if ((this.readyState = this.DONE)) {
-        console.log(this.status + this.response);
-      }
-    };
-    client.send(JSON.stringify(requestBody));*/
+    return requestData;
   }
 }
