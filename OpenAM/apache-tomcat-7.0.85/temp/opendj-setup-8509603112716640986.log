@@ -1,0 +1,180 @@
+Apr 10, 2018 11:04:46 PM org.opends.quicksetup.QuickSetupLog initLogFileHandler
+INFO: QuickSetup application launched April 10, 2018 11:04:46 PM CDT
+Apr 10, 2018 11:04:51 PM org.opends.quicksetup.CurrentInstallStatus getPort
+INFO: Failed to get port
+java.io.FileNotFoundException: C:\Users\milesprower1010\openam\opends\.\config\config.ldif (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at org.opends.quicksetup.Configuration.load(Configuration.java:331)
+	at org.opends.quicksetup.Configuration.getLowerCaseContents(Configuration.java:298)
+	at org.opends.quicksetup.Configuration.getLDAPPort(Configuration.java:191)
+	at org.opends.quicksetup.Configuration.getPort(Configuration.java:92)
+	at org.opends.quicksetup.CurrentInstallStatus.getPort(CurrentInstallStatus.java:178)
+	at org.opends.quicksetup.CurrentInstallStatus.<init>(CurrentInstallStatus.java:80)
+	at org.opends.server.tools.InstallDS.checkInstallStatus(InstallDS.java:622)
+	at org.opends.server.tools.InstallDS.execute(InstallDS.java:417)
+	at org.opends.server.tools.InstallDS.mainCLI(InstallDS.java:341)
+	at com.sun.identity.setup.EmbeddedOpenDS.runOpenDSSetup(EmbeddedOpenDS.java:416)
+	at com.sun.identity.setup.EmbeddedOpenDS.setupOpenDS(EmbeddedOpenDS.java:356)
+	at com.sun.identity.setup.EmbeddedOpenDS.setup(EmbeddedOpenDS.java:248)
+	at com.sun.identity.setup.AMSetupServlet.setupEmbeddedDS(AMSetupServlet.java:904)
+	at com.sun.identity.setup.AMSetupServlet.setupSMDatastore(AMSetupServlet.java:960)
+	at com.sun.identity.setup.AMSetupServlet.configure(AMSetupServlet.java:1032)
+	at com.sun.identity.setup.AMSetupServlet.processRequest(AMSetupServlet.java:648)
+	at com.sun.identity.config.DefaultSummary.createDefaultConfig(DefaultSummary.java:128)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.click.util.ClickUtils.invokeMethod(ClickUtils.java:3317)
+	at org.apache.click.util.ClickUtils.invokeListener(ClickUtils.java:2088)
+	at org.apache.click.control.AbstractControl$1.onAction(AbstractControl.java:228)
+	at org.apache.click.ActionEventDispatcher.fireActionEvent(ActionEventDispatcher.java:259)
+	at org.apache.click.ActionEventDispatcher.fireActionEvents(ActionEventDispatcher.java:236)
+	at org.apache.click.ActionEventDispatcher.fireActionEvents(ActionEventDispatcher.java:180)
+	at org.apache.click.ClickServlet.performOnProcess(ClickServlet.java:746)
+	at org.apache.click.ClickServlet.processAjaxPageEvents(ClickServlet.java:1860)
+	at org.apache.click.ClickServlet.processPage(ClickServlet.java:559)
+	at org.apache.click.ClickServlet.handleRequest(ClickServlet.java:383)
+	at org.apache.click.ClickServlet.doGet(ClickServlet.java:276)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.forgerock.openam.validation.ResponseValidationFilter.doFilter(ResponseValidationFilter.java:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at com.sun.identity.setup.AMSetupFilter.doFilter(AMSetupFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:962)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:445)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1115)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\admin-backend.ldif' to 'C:\Users\milesprower1010\openam\opends\.\config\admin-backend.ldif'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\buildinfo' to 'C:\Users\milesprower1010\openam\opends\.\config\buildinfo'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\config.ldif' to 'C:\Users\milesprower1010\openam\opends\.\config\config.ldif'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\http-config.json' to 'C:\Users\milesprower1010\openam\opends\.\config\http-config.json'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\java.properties' to 'C:\Users\milesprower1010\openam\opends\.\config\java.properties'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\messages\account-disabled.template' to 'C:\Users\milesprower1010\openam\opends\.\config\messages\account-disabled.template'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\messages\account-enabled.template' to 'C:\Users\milesprower1010\openam\opends\.\config\messages\account-enabled.template'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\messages\account-expired.template' to 'C:\Users\milesprower1010\openam\opends\.\config\messages\account-expired.template'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\messages\account-idle-locked.template' to 'C:\Users\milesprower1010\openam\opends\.\config\messages\account-idle-locked.template'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\messages\account-permanently-locked.template' to 'C:\Users\milesprower1010\openam\opends\.\config\messages\account-permanently-locked.template'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\messages\account-reset-locked.template' to 'C:\Users\milesprower1010\openam\opends\.\config\messages\account-reset-locked.template'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\messages\account-temporarily-locked.template' to 'C:\Users\milesprower1010\openam\opends\.\config\messages\account-temporarily-locked.template'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\messages\account-unlocked.template' to 'C:\Users\milesprower1010\openam\opends\.\config\messages\account-unlocked.template'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\messages\password-changed.template' to 'C:\Users\milesprower1010\openam\opends\.\config\messages\password-changed.template'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\messages\password-expired.template' to 'C:\Users\milesprower1010\openam\opends\.\config\messages\password-expired.template'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\messages\password-expiring.template' to 'C:\Users\milesprower1010\openam\opends\.\config\messages\password-expiring.template'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\messages\password-reset.template' to 'C:\Users\milesprower1010\openam\opends\.\config\messages\password-reset.template'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\schema\00-core.ldif' to 'C:\Users\milesprower1010\openam\opends\.\config\schema\00-core.ldif'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\schema\01-pwpolicy.ldif' to 'C:\Users\milesprower1010\openam\opends\.\config\schema\01-pwpolicy.ldif'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\schema\02-config.ldif' to 'C:\Users\milesprower1010\openam\opends\.\config\schema\02-config.ldif'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\schema\03-changelog.ldif' to 'C:\Users\milesprower1010\openam\opends\.\config\schema\03-changelog.ldif'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\schema\03-pwpolicyextension.ldif' to 'C:\Users\milesprower1010\openam\opends\.\config\schema\03-pwpolicyextension.ldif'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\schema\03-rfc2713.ldif' to 'C:\Users\milesprower1010\openam\opends\.\config\schema\03-rfc2713.ldif'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\schema\03-rfc2714.ldif' to 'C:\Users\milesprower1010\openam\opends\.\config\schema\03-rfc2714.ldif'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\schema\03-rfc2739.ldif' to 'C:\Users\milesprower1010\openam\opends\.\config\schema\03-rfc2739.ldif'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\schema\03-rfc2926.ldif' to 'C:\Users\milesprower1010\openam\opends\.\config\schema\03-rfc2926.ldif'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\schema\03-rfc3112.ldif' to 'C:\Users\milesprower1010\openam\opends\.\config\schema\03-rfc3112.ldif'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\schema\03-rfc3712.ldif' to 'C:\Users\milesprower1010\openam\opends\.\config\schema\03-rfc3712.ldif'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\schema\03-uddiv3.ldif' to 'C:\Users\milesprower1010\openam\opends\.\config\schema\03-uddiv3.ldif'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\schema\04-rfc2307bis.ldif' to 'C:\Users\milesprower1010\openam\opends\.\config\schema\04-rfc2307bis.ldif'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\schema\05-rfc4876.ldif' to 'C:\Users\milesprower1010\openam\opends\.\config\schema\05-rfc4876.ldif'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\schema\05-samba.ldif' to 'C:\Users\milesprower1010\openam\opends\.\config\schema\05-samba.ldif'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\schema\05-solaris.ldif' to 'C:\Users\milesprower1010\openam\opends\.\config\schema\05-solaris.ldif'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\schema\06-compat.ldif' to 'C:\Users\milesprower1010\openam\opends\.\config\schema\06-compat.ldif'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\tools.properties' to 'C:\Users\milesprower1010\openam\opends\.\config\tools.properties'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\upgrade\config.ldif.2af80a949263f9233e7048de3cc57a53f1f9d410' to 'C:\Users\milesprower1010\openam\opends\.\config\upgrade\config.ldif.2af80a949263f9233e7048de3cc57a53f1f9d410'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\upgrade\schema.ldif.2af80a949263f9233e7048de3cc57a53f1f9d410' to 'C:\Users\milesprower1010\openam\opends\.\config\upgrade\schema.ldif.2af80a949263f9233e7048de3cc57a53f1f9d410'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\config\wordlist.txt' to 'C:\Users\milesprower1010\openam\opends\.\config\wordlist.txt'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\ldif\openam_suffix.ldif' to 'C:\Users\milesprower1010\openam\opends\.\ldif\openam_suffix.ldif'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.FileManager$CopyOperation apply
+INFO: copying file 'C:\Users\milesprower1010\openam\opends\template\ldif\openam_suffix.ldif.template' to 'C:\Users\milesprower1010\openam\opends\.\ldif\openam_suffix.ldif.template'
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.Utils supportsOption
+INFO: Checking if options "-Xms8m" "-client" are supported with java home: C:\Program FIles\Java\jdk1.8.0_121\jre
+Apr 10, 2018 11:04:55 PM org.opends.quicksetup.util.Utils supportsOption
+INFO: launching ["C:\Users\milesprower1010\openam\opends\lib\_script-util.bat"] with env: {USERDOMAIN_ROAMINGPROFILE=DESKTOP-A973J11, PROCESSOR_LEVEL=6, VS140COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\, _RUNJAVA="C:\Program FIles\Java\jdk1.8.0_121\bin\java.exe", JSSE_OPTS="-Djdk.tls.ephemeralDHKeySize=2048", SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, JAVA_OPTS= "-Djdk.tls.ephemeralDHKeySize=2048", PROCESSOR_ARCHITECTURE=AMD64, PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules, SystemDrive=C:, ENDORSED_PROP=ignore.endorsed.dirs, JRE_HOME=C:\Program FIles\Java\jdk1.8.0_121, USERNAME=milesprower1010, ProgramFiles(x86)=C:\Program Files (x86), DO_NOT_PAUSE=true, FPS_BROWSER_USER_PROFILE_STRING=Default, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY, ProgramData=C:\ProgramData, ProgramW6432=C:\Program Files, HOMEPATH=\Users\milesprower1010, _RUNJDB="C:\Program FIles\Java\jdk1.8.0_121\bin\jdb.exe", PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 79 Stepping 1, GenuineIntel, LOGGING_CONFIG=-Djava.util.logging.config.file="C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85\conf\logging.properties", ProgramFiles=C:\Program Files, PUBLIC=C:\Users\Public, CURRENT_DIR=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85\bin, windir=C:\WINDOWS, =::=::\, LOCALAPPDATA=C:\Users\milesprower1010\AppData\Local, EXECUTABLE=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85\bin\catalina.bat, OPENDJ_JAVA_HOME=C:\Program FIles\Java\jdk1.8.0_121\jre, CATALINA_TMPDIR=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85\temp, USERDOMAIN=DESKTOP-A973J11, FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, LOGONSERVER=\\DESKTOP-A973J11, JAVA_HOME=C:\Program FIles\Java\jdk1.8.0_121, PROMPT=$P$G, OPENDJ_JAVA_ARGS="-Xms8m" "-client", SCRIPT_UTIL_CMD=set-full-environment-and-test-java, CATALINA_BASE=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85, OneDrive=C:\Users\milesprower1010\OneDrive, =C:=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85\bin, APPDATA=C:\Users\milesprower1010\AppData\Roaming, _EXECJAVA=start "Tomcat" "C:\Program FIles\Java\jdk1.8.0_121\bin\java.exe", KINECTSDK20_DIR=C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\, VBOX_MSI_INSTALL_PATH=C:\Program Files\Oracle\VirtualBox\, CommonProgramFiles=C:\Program Files\Common Files, Path=C:\Python34\;C:\Python34\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Users\milesprower1010\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\milesprower1010\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\clisp-2.49, OS=Windows_NT, COMPUTERNAME=DESKTOP-A973J11, CATALINA_HOME=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85, MAINCLASS=org.apache.catalina.startup.Bootstrap, JDK_JAVA_OPTIONS= --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED, LOGGING_MANAGER=-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager, PROCESSOR_REVISION=4f01, CLASSPATH=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85\bin\bootstrap.jar;C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85\bin\tomcat-juli.jar, CommonProgramW6432=C:\Program Files\Common Files, ComSpec=C:\WINDOWS\system32\cmd.exe, SystemRoot=C:\WINDOWS, TEMP=C:\Users\MILESP~1\AppData\Local\Temp, ACTION=start, HOMEDRIVE=C:, USERPROFILE=C:\Users\milesprower1010, TMP=C:\Users\MILESP~1\AppData\Local\Temp, MYSQLCONNECTOR_ASSEMBLIESPATH=C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.5, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, NUMBER_OF_PROCESSORS=8, TITLE=Tomcat}
+Apr 10, 2018 11:05:00 PM org.opends.quicksetup.util.Utils supportsOption
+INFO: returnCode: 0
+Apr 10, 2018 11:05:00 PM org.opends.quicksetup.util.Utils supportsOption
+INFO: supported: true
+Apr 10, 2018 11:05:00 PM org.opends.quicksetup.util.Utils supportsOption
+INFO: Checking if options "-server" are supported with java home: C:\Program FIles\Java\jdk1.8.0_121\jre
+Apr 10, 2018 11:05:00 PM org.opends.quicksetup.util.Utils supportsOption
+INFO: launching ["C:\Users\milesprower1010\openam\opends\lib\_script-util.bat"] with env: {USERDOMAIN_ROAMINGPROFILE=DESKTOP-A973J11, PROCESSOR_LEVEL=6, VS140COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\, _RUNJAVA="C:\Program FIles\Java\jdk1.8.0_121\bin\java.exe", JSSE_OPTS="-Djdk.tls.ephemeralDHKeySize=2048", SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, JAVA_OPTS= "-Djdk.tls.ephemeralDHKeySize=2048", PROCESSOR_ARCHITECTURE=AMD64, PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules, SystemDrive=C:, ENDORSED_PROP=ignore.endorsed.dirs, JRE_HOME=C:\Program FIles\Java\jdk1.8.0_121, USERNAME=milesprower1010, ProgramFiles(x86)=C:\Program Files (x86), DO_NOT_PAUSE=true, FPS_BROWSER_USER_PROFILE_STRING=Default, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY, ProgramData=C:\ProgramData, ProgramW6432=C:\Program Files, HOMEPATH=\Users\milesprower1010, _RUNJDB="C:\Program FIles\Java\jdk1.8.0_121\bin\jdb.exe", PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 79 Stepping 1, GenuineIntel, LOGGING_CONFIG=-Djava.util.logging.config.file="C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85\conf\logging.properties", ProgramFiles=C:\Program Files, PUBLIC=C:\Users\Public, CURRENT_DIR=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85\bin, windir=C:\WINDOWS, =::=::\, LOCALAPPDATA=C:\Users\milesprower1010\AppData\Local, EXECUTABLE=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85\bin\catalina.bat, OPENDJ_JAVA_HOME=C:\Program FIles\Java\jdk1.8.0_121\jre, CATALINA_TMPDIR=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85\temp, USERDOMAIN=DESKTOP-A973J11, FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, LOGONSERVER=\\DESKTOP-A973J11, JAVA_HOME=C:\Program FIles\Java\jdk1.8.0_121, PROMPT=$P$G, OPENDJ_JAVA_ARGS="-server", SCRIPT_UTIL_CMD=set-full-environment-and-test-java, CATALINA_BASE=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85, OneDrive=C:\Users\milesprower1010\OneDrive, =C:=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85\bin, APPDATA=C:\Users\milesprower1010\AppData\Roaming, _EXECJAVA=start "Tomcat" "C:\Program FIles\Java\jdk1.8.0_121\bin\java.exe", KINECTSDK20_DIR=C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\, VBOX_MSI_INSTALL_PATH=C:\Program Files\Oracle\VirtualBox\, CommonProgramFiles=C:\Program Files\Common Files, Path=C:\Python34\;C:\Python34\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Users\milesprower1010\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\milesprower1010\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\clisp-2.49, OS=Windows_NT, COMPUTERNAME=DESKTOP-A973J11, CATALINA_HOME=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85, MAINCLASS=org.apache.catalina.startup.Bootstrap, JDK_JAVA_OPTIONS= --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED, LOGGING_MANAGER=-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager, PROCESSOR_REVISION=4f01, CLASSPATH=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85\bin\bootstrap.jar;C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85\bin\tomcat-juli.jar, CommonProgramW6432=C:\Program Files\Common Files, ComSpec=C:\WINDOWS\system32\cmd.exe, SystemRoot=C:\WINDOWS, TEMP=C:\Users\MILESP~1\AppData\Local\Temp, ACTION=start, HOMEDRIVE=C:, USERPROFILE=C:\Users\milesprower1010, TMP=C:\Users\MILESP~1\AppData\Local\Temp, MYSQLCONNECTOR_ASSEMBLIESPATH=C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.5, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, NUMBER_OF_PROCESSORS=8, TITLE=Tomcat}
+Apr 10, 2018 11:05:05 PM org.opends.quicksetup.util.Utils supportsOption
+INFO: returnCode: 0
+Apr 10, 2018 11:05:05 PM org.opends.quicksetup.util.Utils supportsOption
+INFO: supported: true
+Apr 10, 2018 11:05:05 PM org.opends.quicksetup.util.Utils supportsOption
+INFO: Checking if options "-Xms64m" "-Xmx128m" "-client" are supported with java home: C:\Program FIles\Java\jdk1.8.0_121\jre
+Apr 10, 2018 11:05:05 PM org.opends.quicksetup.util.Utils supportsOption
+INFO: launching ["C:\Users\milesprower1010\openam\opends\lib\_script-util.bat"] with env: {USERDOMAIN_ROAMINGPROFILE=DESKTOP-A973J11, PROCESSOR_LEVEL=6, VS140COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\, _RUNJAVA="C:\Program FIles\Java\jdk1.8.0_121\bin\java.exe", JSSE_OPTS="-Djdk.tls.ephemeralDHKeySize=2048", SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, JAVA_OPTS= "-Djdk.tls.ephemeralDHKeySize=2048", PROCESSOR_ARCHITECTURE=AMD64, PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules, SystemDrive=C:, ENDORSED_PROP=ignore.endorsed.dirs, JRE_HOME=C:\Program FIles\Java\jdk1.8.0_121, USERNAME=milesprower1010, ProgramFiles(x86)=C:\Program Files (x86), DO_NOT_PAUSE=true, FPS_BROWSER_USER_PROFILE_STRING=Default, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY, ProgramData=C:\ProgramData, ProgramW6432=C:\Program Files, HOMEPATH=\Users\milesprower1010, _RUNJDB="C:\Program FIles\Java\jdk1.8.0_121\bin\jdb.exe", PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 79 Stepping 1, GenuineIntel, LOGGING_CONFIG=-Djava.util.logging.config.file="C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85\conf\logging.properties", ProgramFiles=C:\Program Files, PUBLIC=C:\Users\Public, CURRENT_DIR=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85\bin, windir=C:\WINDOWS, =::=::\, LOCALAPPDATA=C:\Users\milesprower1010\AppData\Local, EXECUTABLE=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85\bin\catalina.bat, OPENDJ_JAVA_HOME=C:\Program FIles\Java\jdk1.8.0_121\jre, CATALINA_TMPDIR=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85\temp, USERDOMAIN=DESKTOP-A973J11, FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, LOGONSERVER=\\DESKTOP-A973J11, JAVA_HOME=C:\Program FIles\Java\jdk1.8.0_121, PROMPT=$P$G, OPENDJ_JAVA_ARGS="-Xms64m" "-Xmx128m" "-client", SCRIPT_UTIL_CMD=set-full-environment-and-test-java, CATALINA_BASE=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85, OneDrive=C:\Users\milesprower1010\OneDrive, =C:=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85\bin, APPDATA=C:\Users\milesprower1010\AppData\Roaming, _EXECJAVA=start "Tomcat" "C:\Program FIles\Java\jdk1.8.0_121\bin\java.exe", KINECTSDK20_DIR=C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\, VBOX_MSI_INSTALL_PATH=C:\Program Files\Oracle\VirtualBox\, CommonProgramFiles=C:\Program Files\Common Files, Path=C:\Python34\;C:\Python34\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Users\milesprower1010\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\milesprower1010\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\clisp-2.49, OS=Windows_NT, COMPUTERNAME=DESKTOP-A973J11, CATALINA_HOME=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85, MAINCLASS=org.apache.catalina.startup.Bootstrap, JDK_JAVA_OPTIONS= --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED, LOGGING_MANAGER=-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager, PROCESSOR_REVISION=4f01, CLASSPATH=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85\bin\bootstrap.jar;C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\OpenAM\apache-tomcat-7.0.85\bin\tomcat-juli.jar, CommonProgramW6432=C:\Program Files\Common Files, ComSpec=C:\WINDOWS\system32\cmd.exe, SystemRoot=C:\WINDOWS, TEMP=C:\Users\MILESP~1\AppData\Local\Temp, ACTION=start, HOMEDRIVE=C:, USERPROFILE=C:\Users\milesprower1010, TMP=C:\Users\MILESP~1\AppData\Local\Temp, MYSQLCONNECTOR_ASSEMBLIESPATH=C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.5, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, NUMBER_OF_PROCESSORS=8, TITLE=Tomcat}
+Apr 10, 2018 11:05:10 PM org.opends.quicksetup.util.Utils supportsOption
+INFO: returnCode: 0
+Apr 10, 2018 11:05:10 PM org.opends.quicksetup.util.Utils supportsOption
+INFO: supported: true
+Apr 10, 2018 11:05:10 PM org.opends.quicksetup.installer.Installer configureServer
+INFO: configure DS cmd: -C org.opends.server.extensions.ConfigFileHandler -c C:\Users\milesprower1010\openam\opends\config\config.ldif -h openam.example.com -p 50389 --adminConnectorPort 4444 -x 1689 -D cn=Directory Manager -w {rootUserPassword} -b dc=openam,dc=forgerock,dc=org -R C:\Users\milesprower1010\openam\opends
+Apr 10, 2018 11:05:11 PM org.opends.quicksetup.Application$ApplicationPrintStream println
+INFO: Successfully wrote the updated Directory Server configuration
+Apr 10, 2018 11:05:11 PM org.opends.quicksetup.Application$ApplicationPrintStream println
+INFO: 
+
