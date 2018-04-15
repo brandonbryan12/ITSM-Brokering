@@ -1,0 +1,355 @@
+Apr 10, 2018 11:17:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.85
+Apr 10, 2018 11:17:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Feb 7 2018 18:52:33 UTC
+Apr 10, 2018 11:17:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.85.0
+Apr 10, 2018 11:17:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 10
+Apr 10, 2018 11:17:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            10.0
+Apr 10, 2018 11:17:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Apr 10, 2018 11:17:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             C:\Program FIles\Java\jdk1.8.0_121\jre
+Apr 10, 2018 11:17:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_121-b13
+Apr 10, 2018 11:17:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Apr 10, 2018 11:17:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85
+Apr 10, 2018 11:17:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85
+Apr 10, 2018 11:17:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\conf\logging.properties
+Apr 10, 2018 11:17:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Apr 10, 2018 11:17:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Apr 10, 2018 11:17:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Apr 10, 2018 11:17:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85
+Apr 10, 2018 11:17:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85
+Apr 10, 2018 11:17:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\temp
+Apr 10, 2018 11:17:44 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program FIles\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python34\;C:\Python34\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Users\milesprower1010\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\milesprower1010\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\clisp-2.49;.
+Apr 10, 2018 11:17:44 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8081"]
+Apr 10, 2018 11:17:44 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8010"]
+Apr 10, 2018 11:17:44 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 415 ms
+Apr 10, 2018 11:17:44 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 10, 2018 11:17:44 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.85
+Apr 10, 2018 11:17:44 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\springboot.war
+Apr 10, 2018 11:17:47 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 10, 2018 11:17:53 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\springboot.war has finished in 8,658 ms
+Apr 10, 2018 11:17:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\docs
+Apr 10, 2018 11:17:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\docs has finished in 32 ms
+Apr 10, 2018 11:17:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\examples
+Apr 10, 2018 11:17:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\examples has finished in 154 ms
+Apr 10, 2018 11:17:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\host-manager
+Apr 10, 2018 11:17:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\host-manager has finished in 108 ms
+Apr 10, 2018 11:17:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\manager
+Apr 10, 2018 11:17:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\manager has finished in 37 ms
+Apr 10, 2018 11:17:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\ROOT
+Apr 10, 2018 11:17:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\ROOT has finished in 28 ms
+Apr 10, 2018 11:17:53 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8081"]
+Apr 10, 2018 11:17:54 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8010"]
+Apr 10, 2018 11:17:54 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 9068 ms
+Apr 10, 2018 11:17:54 PM org.apache.catalina.core.StandardServer await
+SEVERE: StandardServer.await: create[localhost:8005]: 
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:444)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:793)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:739)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:294)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:428)
+
+Apr 10, 2018 11:17:54 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8081"]
+Apr 10, 2018 11:17:54 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8010"]
+Apr 10, 2018 11:17:54 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 10, 2018 11:17:54 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/springboot] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Apr 10, 2018 11:17:54 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8081"]
+Apr 10, 2018 11:17:54 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8010"]
+Apr 10, 2018 11:17:54 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8081"]
+Apr 10, 2018 11:17:54 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8010"]
+Apr 10, 2018 11:18:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.85
+Apr 10, 2018 11:18:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Feb 7 2018 18:52:33 UTC
+Apr 10, 2018 11:18:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.85.0
+Apr 10, 2018 11:18:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 10
+Apr 10, 2018 11:18:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            10.0
+Apr 10, 2018 11:18:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Apr 10, 2018 11:18:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             C:\Program FIles\Java\jdk1.8.0_121\jre
+Apr 10, 2018 11:18:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_121-b13
+Apr 10, 2018 11:18:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Apr 10, 2018 11:18:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85
+Apr 10, 2018 11:18:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85
+Apr 10, 2018 11:18:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\conf\logging.properties
+Apr 10, 2018 11:18:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Apr 10, 2018 11:18:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Apr 10, 2018 11:18:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Apr 10, 2018 11:18:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85
+Apr 10, 2018 11:18:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85
+Apr 10, 2018 11:18:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\temp
+Apr 10, 2018 11:18:32 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program FIles\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python34\;C:\Python34\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Users\milesprower1010\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\milesprower1010\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\clisp-2.49;.
+Apr 10, 2018 11:18:32 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8081"]
+Apr 10, 2018 11:18:32 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8010"]
+Apr 10, 2018 11:18:32 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 419 ms
+Apr 10, 2018 11:18:32 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 10, 2018 11:18:32 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.85
+Apr 10, 2018 11:18:32 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\springboot.war
+Apr 10, 2018 11:18:34 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 10, 2018 11:18:41 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\springboot.war has finished in 8,671 ms
+Apr 10, 2018 11:18:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\docs
+Apr 10, 2018 11:18:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\docs has finished in 35 ms
+Apr 10, 2018 11:18:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\examples
+Apr 10, 2018 11:18:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\examples has finished in 175 ms
+Apr 10, 2018 11:18:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\host-manager
+Apr 10, 2018 11:18:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\host-manager has finished in 129 ms
+Apr 10, 2018 11:18:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\manager
+Apr 10, 2018 11:18:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\manager has finished in 37 ms
+Apr 10, 2018 11:18:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\ROOT
+Apr 10, 2018 11:18:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\ROOT has finished in 27 ms
+Apr 10, 2018 11:18:41 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8081"]
+Apr 10, 2018 11:18:41 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8010"]
+Apr 10, 2018 11:18:41 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 9125 ms
+Apr 10, 2018 11:29:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.85
+Apr 10, 2018 11:29:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Feb 7 2018 18:52:33 UTC
+Apr 10, 2018 11:29:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.85.0
+Apr 10, 2018 11:29:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 10
+Apr 10, 2018 11:29:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            10.0
+Apr 10, 2018 11:29:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Apr 10, 2018 11:29:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             C:\Program FIles\Java\jdk1.8.0_121\jre
+Apr 10, 2018 11:29:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_121-b13
+Apr 10, 2018 11:29:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Apr 10, 2018 11:29:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85
+Apr 10, 2018 11:29:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85
+Apr 10, 2018 11:29:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\conf\logging.properties
+Apr 10, 2018 11:29:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Apr 10, 2018 11:29:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Apr 10, 2018 11:29:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Apr 10, 2018 11:29:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85
+Apr 10, 2018 11:29:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85
+Apr 10, 2018 11:29:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\temp
+Apr 10, 2018 11:29:28 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program FIles\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python34\;C:\Python34\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Users\milesprower1010\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\milesprower1010\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\clisp-2.49;.
+Apr 10, 2018 11:29:29 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8081"]
+Apr 10, 2018 11:29:29 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8010"]
+Apr 10, 2018 11:29:29 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 431 ms
+Apr 10, 2018 11:29:29 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 10, 2018 11:29:29 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.85
+Apr 10, 2018 11:29:29 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\springboot.war
+Apr 10, 2018 11:29:31 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 10, 2018 11:29:37 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\springboot.war has finished in 8,676 ms
+Apr 10, 2018 11:29:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\docs
+Apr 10, 2018 11:29:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\docs has finished in 34 ms
+Apr 10, 2018 11:29:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\examples
+Apr 10, 2018 11:29:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\examples has finished in 190 ms
+Apr 10, 2018 11:29:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\host-manager
+Apr 10, 2018 11:29:38 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\host-manager has finished in 102 ms
+Apr 10, 2018 11:29:38 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\manager
+Apr 10, 2018 11:29:38 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\manager has finished in 46 ms
+Apr 10, 2018 11:29:38 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\ROOT
+Apr 10, 2018 11:29:38 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\ROOT has finished in 36 ms
+Apr 10, 2018 11:29:38 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8081"]
+Apr 10, 2018 11:29:38 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8010"]
+Apr 10, 2018 11:29:38 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 9137 ms
+Apr 10, 2018 11:48:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.85
+Apr 10, 2018 11:48:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Feb 7 2018 18:52:33 UTC
+Apr 10, 2018 11:48:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.85.0
+Apr 10, 2018 11:48:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 10
+Apr 10, 2018 11:48:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            10.0
+Apr 10, 2018 11:48:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Apr 10, 2018 11:48:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             C:\Program FIles\Java\jdk1.8.0_121\jre
+Apr 10, 2018 11:48:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_121-b13
+Apr 10, 2018 11:48:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Apr 10, 2018 11:48:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85
+Apr 10, 2018 11:48:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85
+Apr 10, 2018 11:48:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\conf\logging.properties
+Apr 10, 2018 11:48:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Apr 10, 2018 11:48:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Apr 10, 2018 11:48:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Apr 10, 2018 11:48:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85
+Apr 10, 2018 11:48:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85
+Apr 10, 2018 11:48:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\temp
+Apr 10, 2018 11:48:30 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program FIles\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python34\;C:\Python34\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Users\milesprower1010\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\milesprower1010\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\clisp-2.49;.
+Apr 10, 2018 11:48:30 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8081"]
+Apr 10, 2018 11:48:30 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8010"]
+Apr 10, 2018 11:48:30 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 394 ms
+Apr 10, 2018 11:48:30 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 10, 2018 11:48:30 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.85
+Apr 10, 2018 11:48:30 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\springboot.war
+Apr 10, 2018 11:48:32 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 10, 2018 11:48:43 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\springboot.war has finished in 12,965 ms
+Apr 10, 2018 11:48:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\docs
+Apr 10, 2018 11:48:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\docs has finished in 36 ms
+Apr 10, 2018 11:48:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\examples
+Apr 10, 2018 11:48:44 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\examples has finished in 226 ms
+Apr 10, 2018 11:48:44 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\host-manager
+Apr 10, 2018 11:48:44 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\host-manager has finished in 87 ms
+Apr 10, 2018 11:48:44 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\manager
+Apr 10, 2018 11:48:44 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\manager has finished in 36 ms
+Apr 10, 2018 11:48:44 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\ROOT
+Apr 10, 2018 11:48:44 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Documents\GitHub\ITSM-Brokering\SpringBootWithTomcat\apache-tomcat-7.0.85\webapps\ROOT has finished in 34 ms
+Apr 10, 2018 11:48:44 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8081"]
+Apr 10, 2018 11:48:44 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8010"]
+Apr 10, 2018 11:48:44 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 13440 ms

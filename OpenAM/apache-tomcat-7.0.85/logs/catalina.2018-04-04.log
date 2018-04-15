@@ -1,0 +1,194 @@
+Apr 04, 2018 10:10:10 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.85
+Apr 04, 2018 10:10:10 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Feb 7 2018 18:52:33 UTC
+Apr 04, 2018 10:10:10 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.85.0
+Apr 04, 2018 10:10:10 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 10
+Apr 04, 2018 10:10:10 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            10.0
+Apr 04, 2018 10:10:10 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Apr 04, 2018 10:10:10 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             C:\Program FIles\Java\jdk1.8.0_121\jre
+Apr 04, 2018 10:10:10 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_121-b13
+Apr 04, 2018 10:10:10 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Apr 04, 2018 10:10:10 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85
+Apr 04, 2018 10:10:10 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85
+Apr 04, 2018 10:10:10 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\conf\logging.properties
+Apr 04, 2018 10:10:10 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Apr 04, 2018 10:10:10 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Apr 04, 2018 10:10:10 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Apr 04, 2018 10:10:10 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85
+Apr 04, 2018 10:10:10 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85
+Apr 04, 2018 10:10:10 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\temp
+Apr 04, 2018 10:10:10 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program FIles\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python34\;C:\Python34\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Users\milesprower1010\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\milesprower1010\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\clisp-2.49;.
+Apr 04, 2018 10:10:10 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Apr 04, 2018 10:10:10 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Apr 04, 2018 10:10:10 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 451 ms
+Apr 04, 2018 10:10:10 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 04, 2018 10:10:10 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.85
+Apr 04, 2018 10:10:10 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\openam.war
+Apr 04, 2018 10:10:46 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 04, 2018 10:10:47 PM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextInitialized
+INFO: WSSERVLET12: JAX-WS context listener initializing
+Apr 04, 2018 10:10:48 PM com.sun.xml.ws.transport.http.servlet.WSServletDelegate <init>
+INFO: WSSERVLET14: JAX-WS servlet initializing
+Apr 04, 2018 10:10:48 PM com.sun.jersey.server.impl.application.WebApplicationImpl initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.1.1-ea 07/14/2009 07:18 PM'
+Apr 04, 2018 10:10:48 PM com.sun.jersey.server.impl.application.WebApplicationImpl newResourceClass
+WARNING: A sub-resource method, public javax.ws.rs.core.Response org.forgerock.openam.forgerockrest.authn.AuthenticationRestService.authenticate(javax.ws.rs.core.HttpHeaders,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String,java.lang.String), with URI template, "/", is treated as a resource method
+Apr 04, 2018 10:10:48 PM com.sun.jersey.server.impl.application.WebApplicationImpl newResourceClass
+WARNING: A sub-resource method, public javax.ws.rs.core.Response org.forgerock.openam.forgerockrest.authn.AuthenticationRestService.getMethodNotSupported(), with URI template, "/", is treated as a resource method
+Apr 04, 2018 10:10:48 PM com.sun.jersey.server.impl.application.WebApplicationImpl initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.1.1-ea 07/14/2009 07:18 PM'
+Apr 04, 2018 10:10:48 PM com.sun.jersey.server.impl.application.WebApplicationImpl initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.1.1-ea 07/14/2009 07:18 PM'
+Apr 04, 2018 10:10:48 PM com.sun.jersey.server.impl.application.WebApplicationImpl initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.1.1-ea 07/14/2009 07:18 PM'
+Apr 04, 2018 10:10:51 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\openam.war has finished in 40,531 ms
+Apr 04, 2018 10:10:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\docs
+Apr 04, 2018 10:10:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\docs has finished in 40 ms
+Apr 04, 2018 10:10:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\examples
+Apr 04, 2018 10:10:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\examples has finished in 183 ms
+Apr 04, 2018 10:10:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\host-manager
+Apr 04, 2018 10:10:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\host-manager has finished in 99 ms
+Apr 04, 2018 10:10:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\manager
+Apr 04, 2018 10:10:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\manager has finished in 41 ms
+Apr 04, 2018 10:10:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\ROOT
+Apr 04, 2018 10:10:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\ROOT has finished in 31 ms
+Apr 04, 2018 10:10:51 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Apr 04, 2018 10:10:51 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Apr 04, 2018 10:10:51 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 40983 ms
+Apr 04, 2018 10:11:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.85
+Apr 04, 2018 10:11:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Feb 7 2018 18:52:33 UTC
+Apr 04, 2018 10:11:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.85.0
+Apr 04, 2018 10:11:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 10
+Apr 04, 2018 10:11:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            10.0
+Apr 04, 2018 10:11:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Apr 04, 2018 10:11:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             C:\Program FIles\Java\jdk1.8.0_121\jre
+Apr 04, 2018 10:11:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_121-b13
+Apr 04, 2018 10:11:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Apr 04, 2018 10:11:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85
+Apr 04, 2018 10:11:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85
+Apr 04, 2018 10:11:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\conf\logging.properties
+Apr 04, 2018 10:11:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Apr 04, 2018 10:11:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Apr 04, 2018 10:11:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Apr 04, 2018 10:11:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85
+Apr 04, 2018 10:11:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85
+Apr 04, 2018 10:11:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\temp
+Apr 04, 2018 10:11:50 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program FIles\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python34\;C:\Python34\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Users\milesprower1010\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\milesprower1010\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\clisp-2.49;.
+Apr 04, 2018 10:11:50 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Apr 04, 2018 10:11:50 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Apr 04, 2018 10:11:50 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 420 ms
+Apr 04, 2018 10:11:50 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 04, 2018 10:11:50 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.85
+Apr 04, 2018 10:11:50 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\openam.war
+Apr 04, 2018 10:11:54 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 04, 2018 10:11:55 PM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextInitialized
+INFO: WSSERVLET12: JAX-WS context listener initializing
+Apr 04, 2018 10:11:56 PM com.sun.xml.ws.transport.http.servlet.WSServletDelegate <init>
+INFO: WSSERVLET14: JAX-WS servlet initializing
+Apr 04, 2018 10:11:56 PM com.sun.jersey.server.impl.application.WebApplicationImpl initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.1.1-ea 07/14/2009 07:18 PM'
+Apr 04, 2018 10:11:56 PM com.sun.jersey.server.impl.application.WebApplicationImpl newResourceClass
+WARNING: A sub-resource method, public javax.ws.rs.core.Response org.forgerock.openam.forgerockrest.authn.AuthenticationRestService.authenticate(javax.ws.rs.core.HttpHeaders,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String,java.lang.String), with URI template, "/", is treated as a resource method
+Apr 04, 2018 10:11:56 PM com.sun.jersey.server.impl.application.WebApplicationImpl newResourceClass
+WARNING: A sub-resource method, public javax.ws.rs.core.Response org.forgerock.openam.forgerockrest.authn.AuthenticationRestService.getMethodNotSupported(), with URI template, "/", is treated as a resource method
+Apr 04, 2018 10:11:56 PM com.sun.jersey.server.impl.application.WebApplicationImpl initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.1.1-ea 07/14/2009 07:18 PM'
+Apr 04, 2018 10:11:56 PM com.sun.jersey.server.impl.application.WebApplicationImpl initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.1.1-ea 07/14/2009 07:18 PM'
+Apr 04, 2018 10:11:56 PM com.sun.jersey.server.impl.application.WebApplicationImpl initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.1.1-ea 07/14/2009 07:18 PM'
+Apr 04, 2018 10:11:56 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\openam.war has finished in 6,441 ms
+Apr 04, 2018 10:11:56 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\docs
+Apr 04, 2018 10:11:56 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\docs has finished in 28 ms
+Apr 04, 2018 10:11:56 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\examples
+Apr 04, 2018 10:11:56 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\examples has finished in 156 ms
+Apr 04, 2018 10:11:56 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\host-manager
+Apr 04, 2018 10:11:57 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\host-manager has finished in 83 ms
+Apr 04, 2018 10:11:57 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\manager
+Apr 04, 2018 10:11:57 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\manager has finished in 37 ms
+Apr 04, 2018 10:11:57 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\ROOT
+Apr 04, 2018 10:11:57 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\milesprower1010\Downloads\apache-tomcat-7.0.85\apache-tomcat-7.0.85\webapps\ROOT has finished in 30 ms
+Apr 04, 2018 10:11:57 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Apr 04, 2018 10:11:57 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Apr 04, 2018 10:11:57 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6826 ms
+Apr 04, 2018 10:14:08 PM org.apache.jasper.compiler.TldLocationsCache tldScanJar
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
