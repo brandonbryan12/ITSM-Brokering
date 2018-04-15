@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: frdev
+Build-Jdk: 1.6.0_45
+Specification-Title: OpenAM Server
+Specification-Version: 11.0.3
+Specification-Vendor: ForgeRock
+Implementation-Title: OpenAM Server
+Implementation-Version: 11.0.3
+Implementation-Vendor-Id: org.forgerock.ce.openam
+Implementation-Vendor: ForgeRock
+
