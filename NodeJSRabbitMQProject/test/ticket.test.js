@@ -5,7 +5,6 @@ let ticket_sys_id;
 
 describe('Ticket', () => {
   it('is translated', () => {
-    //assert(true);
     const Consumer = require('./../consumer');
 
     const consumer = new Consumer('sn');

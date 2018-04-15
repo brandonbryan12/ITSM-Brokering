@@ -15,7 +15,7 @@ module.exports = class Producer {
         //var msg = process.argv.slice(2).join(' ');
         let payload = {
           acct: 'Walmart',
-          method: 'create',
+          method: 'post',
           data: {
             caller_id: '1',
             category: 'network',
