@@ -1,0 +1,27 @@
+{
+  "name": "itsm-brokering",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "btoa": "^1.2.1",
+    "express": "^4.16.3",
+    "mocha": "^5.0.5",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha --timeout 30000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonbryan12/ITSM-Brokering.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonbryan12/ITSM-Brokering/issues"
+  },
+  "homepage": "https://github.com/brandonbryan12/ITSM-Brokering#readme"
+}
